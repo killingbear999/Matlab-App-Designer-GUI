@@ -1,5 +1,7 @@
 classdef PL3GUI_exported < matlab.apps.AppBase
 
+    % Matlab-defined variables (UI components)
+    % Fixed and cannot edit
     % Properties that correspond to app components
     properties (Access = public)
         UIFigure                     matlab.ui.Figure
@@ -104,7 +106,8 @@ classdef PL3GUI_exported < matlab.apps.AppBase
         ProjectLab3Label             matlab.ui.control.Label
     end
 
-    
+
+    % define all variables (user-defined variables)
     properties (Access = public)
         i = 0;
         t;
@@ -432,6 +435,7 @@ classdef PL3GUI_exported < matlab.apps.AppBase
     end
     
 
+    % Callbacks
     methods (Access = private)
 
         % Code that executes after component creation
@@ -925,6 +929,7 @@ classdef PL3GUI_exported < matlab.apps.AppBase
     end
 
     % App initialization and construction
+    % Fixed and cannot edit
     methods (Access = private)
 
         % Create UIFigure and components
